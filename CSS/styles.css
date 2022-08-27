@@ -5,4 +5,66 @@
 }
 :root{
     font-size: 62.5%;
+
+    --bg-fc:  #121214;
+    --base-color:194;
+
+    --bg-bd:  hsla(var(--base-color), 100%, 63%, 0.13);
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+
+
+    --primary-set:#FFFFFF;
+}
+body{
+    font-family: 'Roboto';
+    background: var(--bg-fc);
+    color: var(--primary-set);
+
+    display: grid;
+    min-height: 100vh;
+}
+
+main{
+    justify-self: center;
+    align-self: flex-end;
+}
+
+footer{
+    align-self:end;
+    justify-self: end;
+
+    padding:0 4rem 3.2rem 0
+}
+button{
+    border: none;
+    background-color: transparent;
+
+    cursor:pointer;
+}
+button svg{
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+.hide{
+    display: none;
+}
+#timer{
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+
+    display: flex;
+    margin-bottom: 1.6rem;
+}
+
+
+#controls{
+    background: var(--bg-bd);
+    border-radius: 9rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3.2rem;
+    padding:2.2rem 4rem;
+
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
 }
